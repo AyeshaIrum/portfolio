@@ -82,13 +82,22 @@ function App() {
                 <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem", marginTop: "2rem" }}>
                     Hello, I'm <span style={{ color: "#b8a4ff" }}>Ayesha Irum</span>
                 </h1>
-                <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
-                    Website Developer and UI/UX Designer
+
+                <p
+                    style={{
+                        fontSize: "1.3rem",
+                        marginBottom: "2rem",
+                        color: "#d8ccff",
+                        maxWidth: "700px",
+                        lineHeight: "1.7",
+                    }}
+                >
+                    Product-Focused Software Engineer & Full-Stack Developer
                 </p>
+
                 <div style={{ display: "flex", gap: "1rem", marginBottom: "2rem" }}>
-                    {/* "Download resume" opens resume.pdf in a new tab */}
                     <a
-                        href="/resume.pdf"
+                        href="/ayesha_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
@@ -101,9 +110,9 @@ function App() {
                             textDecoration: "none",
                         }}
                     >
-                        Download resume
+                        View Resume
                     </a>
-                    {/* "About Me" scrolls down to the About section */}
+
                     <button
                         onClick={handleScrollToAbout}
                         style={{
@@ -119,7 +128,6 @@ function App() {
                     </button>
                 </div>
 
-                {/* Circular photo container */}
                 <div
                     style={{
                         width: "180px",
@@ -150,17 +158,26 @@ function App() {
                     borderRadius: "15px",
                     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
                     margin: "2rem auto",
-                    maxWidth: "800px",
+                    maxWidth: "850px",
                 }}
             >
-                <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#b8a4ff" }}>About Me</h2>
-                <p style={{ maxWidth: "600px", margin: "0 auto", lineHeight: "1.6" }}>
-                    I'm a skilled{" "}
-                    <span style={{ color: "#b8a4ff", fontWeight: "bold" }}>full-stack developer</span> with
-                    experience in JavaScript, React, Node, MySQL, and Python. I'm a{" "}
-                    <strong>quick learner</strong> and a <strong>team player</strong>, passionate about creating{" "}
-                    <span style={{ color: "#b8a4ff" }}>user-friendly</span> and functional websites and
-                    applications.
+                <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#b8a4ff" }}>
+                    About Me
+                </h2>
+
+                <p
+                    style={{
+                        maxWidth: "700px",
+                        margin: "0 auto",
+                        lineHeight: "1.9",
+                        fontSize: "1.05rem",
+                    }}
+                >
+                    I’m a Computer Science graduate with experience in full-stack development,
+                    product coordination, customer operations, and user-focused web applications.
+                    I enjoy building products that are scalable, accessible, and easy to use.
+                    My background includes React, SQL, PostgreSQL, UI/UX improvements,
+                    database systems, and cross-functional teamwork.
                 </p>
             </div>
 
@@ -176,8 +193,10 @@ function App() {
                 <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#b8a4ff", textAlign: "center" }}>
                     Projects
                 </h2>
-                <p style={{ textAlign: "center" }}>
-                    My personal projects demonstrating my skills...
+
+                <p style={{ textAlign: "center", maxWidth: "750px", margin: "0 auto" }}>
+                    Selected projects showcasing full-stack development, product thinking,
+                    database systems, and scalable application design.
                 </p>
 
                 <div
@@ -191,68 +210,67 @@ function App() {
                 >
                     {[
                         {
-                            title: "Portfolio",
+                            title: "CrisisRelief Platform",
                             description:
-                                "Built this portfolio with React, which demonstrates my projects, experience, " +
-                                "skills in responsive design, and modern web development practices.",
-                            github: "https://github.com/AyeshaIrum/react-portfolio",
+                                "Built a full-stack disaster relief platform helping users locate shelters, hospitals, food banks, and emergency resources using Google Maps and weather APIs.",
+                            github: "https://github.com/sfsu-joseo/csc648-848-05-sp25-T05",
                         },
                         {
-                            title: "Calculator Project",
+                            title: "Appointment Booking System",
                             description:
-                                "A full-featured calculator in Java. Showcases arithmetic logic, " +
-                                "user-friendly interface, and clean, efficient code design.",
-                            github: "https://github.com/AyeshaIrum/calculator-project",
+                                "Designed and implemented a database-driven appointment scheduling platform with normalized schemas, ER/EER diagrams, and optimized SQL queries.",
+                            github: "https:"//github.com/AyeshaIrum/Appointment-Booking",
                         },
+
                         {
-                            title: "Tank Game",
+                            title: "File System Implementation",
                             description:
-                                "A 2D tank game built in Java. Two-player split-screen, with collision detection, " +
-                                "power-ups, and breakable terrain.",
-                            github: "https://github.com/AyeshaIrum/TankGame",
+                                "Developed a simulated file system in C with free-space management, metadata handling, file operations, and Unix-style shell commands.",
+                            github: "https://github.com/AnshajVats/Filesystem",
                         },
+
                         {
-                            title: "Full-Stack App",
+                            title: "Real-Time Multiplayer Bingo Game",
                             description:
-                                "A MERN-based app with user auth & real-time data updates. " +
-                                "Users can create accounts, post, like, comment, and chat via socket.io.",
-                            github: "https://github.com/AyeshaIrum/full-stack-app",
+                                "Created a multiplayer Bingo game using Node.js, Express, Socket.io, and PostgreSQL with real-time gameplay and persistent sessions.",
+                            github: "https://github.com/AyeshaIrum/majora-mask-project",
                         },
+
                     ].map((proj, i) => (
                         <div
                             key={i}
                             style={{
-                                width: "240px",
-                                backgroundColor: "rgba(255, 255, 255, 0.05)",
-                                borderRadius: "10px",
-                                padding: "1rem",
+                                width: "260px",
+                                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                                borderRadius: "14px",
+                                padding: "1.2rem",
+                                boxShadow: "0px 4px 14px rgba(0,0,0,0.35)",
                             }}
                         >
-                            <h3 style={{ fontSize: "1.2rem", color: "#b8a4ff", marginBottom: "0.3rem" }}>
+                            <h3 style={{ fontSize: "1.2rem", color: "#b8a4ff", marginBottom: "0.5rem" }}>
                                 {proj.title}
                             </h3>
-                            <p style={{ fontSize: "0.9rem", lineHeight: "1.4", marginBottom: "0.5rem" }}>
+
+                            <p style={{ fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "1rem" }}>
                                 {proj.description}
                             </p>
-                            {proj.github ? (
-                                <a
-                                    href={proj.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                        backgroundColor: "#b8a4ff",
-                                        color: "#000",
-                                        padding: "0.4rem 0.8rem",
-                                        borderRadius: "5px",
-                                        textDecoration: "none",
-                                        fontSize: "0.8rem",
-                                    }}
-                                >
-                                    Demo &rsaquo;
-                                </a>
-                            ) : (
-                                <span style={{ fontSize: "0.8rem", opacity: 0.7 }}>No repo yet</span>
-                            )}
+
+                            <a
+                                href={proj.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    backgroundColor: "#b8a4ff",
+                                    color: "#000",
+                                    padding: "0.5rem 0.9rem",
+                                    borderRadius: "20px",
+                                    textDecoration: "none",
+                                    fontSize: "0.85rem",
+                                    fontWeight: "bold",
+                                }}
+                            >
+                                View Project &rsaquo;
+                            </a>
                         </div>
                     ))}
                 </div>
@@ -268,31 +286,34 @@ function App() {
                     color: "#fff",
                 }}
             >
-                <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#b8a4ff" }}>Skills</h2>
+                <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#b8a4ff" }}>
+                    Skills
+                </h2>
 
-                {/* Two big columns container */}
                 <div
                     style={{
                         display: "flex",
                         justifyContent: "center",
                         gap: "2rem",
                         flexWrap: "wrap",
-                        maxWidth: "900px",
+                        maxWidth: "1000px",
                         margin: "0 auto",
                     }}
                 >
-                    {/* Frontend Card */}
                     <div
                         style={{
-                            backgroundColor: "rgba(255,255,255,0.05)",
-                            borderRadius: "10px",
+                            backgroundColor: "rgba(255,255,255,0.08)",
+                            borderRadius: "14px",
                             padding: "1.5rem",
-                            minWidth: "300px",
+                            minWidth: "280px",
                         }}
                     >
-                        <h3 style={{ color: "#b8a4ff", marginBottom: "1rem" }}>Frontend Development</h3>
+                        <h3 style={{ color: "#b8a4ff", marginBottom: "1rem" }}>
+                            Frontend & Design
+                        </h3>
+
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                            {["HTML/CSS", "JavaScript", "React", "Git"].map((skill) => (
+                            {["React", "JavaScript", "TailwindCSS", "HTML/CSS", "Figma", "Git/GitHub"].map((skill) => (
                                 <div key={skill} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                                     <span style={{ color: "#b8a4ff" }}>✔</span>
                                     <strong>{skill}</strong>
@@ -301,18 +322,42 @@ function App() {
                         </div>
                     </div>
 
-                    {/* Backend Card */}
                     <div
                         style={{
-                            backgroundColor: "rgba(255,255,255,0.05)",
-                            borderRadius: "10px",
+                            backgroundColor: "rgba(255,255,255,0.08)",
+                            borderRadius: "14px",
                             padding: "1.5rem",
-                            minWidth: "300px",
+                            minWidth: "280px",
                         }}
                     >
-                        <h3 style={{ color: "#b8a4ff", marginBottom: "1rem" }}>Backend Development</h3>
+                        <h3 style={{ color: "#b8a4ff", marginBottom: "1rem" }}>
+                            Backend & Database
+                        </h3>
+
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                            {["Node JS", "Python", "MongoDB", "MySQL"].map((skill) => (
+                            {["Node.js", "Express.js", "PostgreSQL", "MySQL", "MongoDB", "REST APIs"].map((skill) => (
+                                <div key={skill} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                    <span style={{ color: "#b8a4ff" }}>✔</span>
+                                    <strong>{skill}</strong>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div
+                        style={{
+                            backgroundColor: "rgba(255,255,255,0.08)",
+                            borderRadius: "14px",
+                            padding: "1.5rem",
+                            minWidth: "280px",
+                        }}
+                    >
+                        <h3 style={{ color: "#b8a4ff", marginBottom: "1rem" }}>
+                            Product & Operations
+                        </h3>
+
+                        <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                            {["Agile", "Jira", "Trello", "User Feedback", "Documentation", "Cross-Functional Teamwork"].map((skill) => (
                                 <div key={skill} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                                     <span style={{ color: "#b8a4ff" }}>✔</span>
                                     <strong>{skill}</strong>
@@ -338,7 +383,6 @@ function App() {
                     Contact Me
                 </h2>
 
-                {/* Align items stretch => both columns same height */}
                 <div
                     style={{
                         display: "flex",
@@ -348,7 +392,6 @@ function App() {
                         alignItems: "stretch",
                     }}
                 >
-                    {/* Left: "Talk to me" cards */}
                     <div
                         style={{
                             flex: "1 1 300px",
@@ -359,73 +402,69 @@ function App() {
                     >
                         <h3 style={{ marginBottom: "0.5rem" }}>Talk to me</h3>
 
-                        {/* Email */}
                         <div
                             style={{
                                 flex: 1,
-                                backgroundColor: "rgba(255,255,255,0.05)",
+                                backgroundColor: "rgba(255,255,255,0.08)",
                                 borderRadius: "10px",
                                 padding: "1rem",
                             }}
                         >
                             <h4>Email</h4>
-                            <p style={{ opacity: 0.8 }}>airum@sfsu.edu</p>
+                            <p style={{ opacity: 0.8 }}>ayeshairum18@gmail.com</p>
                             <a
-                                href="mailto:airum@sfsu.edu"
+                                href="mailto:ayeshairum18@gmail.com"
                                 style={{ color: "#b8a4ff", textDecoration: "none", fontSize: "0.9rem" }}
                             >
                                 Write Me &rsaquo;
                             </a>
                         </div>
 
-                        {/* Instagram */}
                         <div
                             style={{
                                 flex: 1,
-                                backgroundColor: "rgba(255,255,255,0.05)",
+                                backgroundColor: "rgba(255,255,255,0.08)",
                                 borderRadius: "10px",
                                 padding: "1rem",
                             }}
                         >
-                            <h4>Instagram</h4>
-                            <p style={{ opacity: 0.8 }}>@iayeshairum</p>
+                            <h4>LinkedIn</h4>
+                            <p style={{ opacity: 0.8 }}>Ayesha Irum</p>
                             <a
-                                href="https://www.instagram.com/iayeshairum/"
+                                href="https://www.linkedin.com/in/ayesha-irum-a817471b2/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ color: "#b8a4ff", textDecoration: "none", fontSize: "0.9rem" }}
                             >
-                                Write Me &rsaquo;
+                                Connect &rsaquo;
                             </a>
                         </div>
 
-                        {/* Discord */}
                         <div
                             style={{
                                 flex: 1,
-                                backgroundColor: "rgba(255,255,255,0.05)",
+                                backgroundColor: "rgba(255,255,255,0.08)",
                                 borderRadius: "10px",
                                 padding: "1rem",
                             }}
                         >
-                            <h4>Discord</h4>
-                            <p style={{ opacity: 0.8 }}>@ayeshairum</p>
+                            <h4>GitHub</h4>
+                            <p style={{ opacity: 0.8 }}>AyeshaIrum</p>
                             <a
-                                href="https://discord.gg/7b6Askp7"
+                                href="https://github.com/AyeshaIrum"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ color: "#b8a4ff", textDecoration: "none", fontSize: "0.9rem" }}
                             >
-                                Write Me &rsaquo;
+                                View GitHub &rsaquo;
                             </a>
                         </div>
                     </div>
 
-                    {/* Right: Contact Form => same height as left side */}
                     <div
                         style={{
                             flex: "1 1 500px",
-                            backgroundColor: "rgba(255,255,255,0.05)",
+                            backgroundColor: "rgba(255,255,255,0.08)",
                             borderRadius: "10px",
                             padding: "1.5rem",
                             display: "flex",
@@ -434,6 +473,7 @@ function App() {
                         }}
                     >
                         <h3 style={{ marginBottom: "1rem" }}>Write Me Your Message</h3>
+
                         <form
                             style={{
                                 display: "flex",
@@ -457,6 +497,7 @@ function App() {
                                         color: "#fff",
                                     }}
                                 />
+
                                 <input
                                     type="email"
                                     placeholder="Enter email"
@@ -470,6 +511,7 @@ function App() {
                                         color: "#fff",
                                     }}
                                 />
+
                                 <textarea
                                     placeholder="Write your message"
                                     rows={14}
@@ -484,23 +526,21 @@ function App() {
                                 />
                             </div>
 
-                            <div>
-                                <button
-                                    type="submit"
-                                    style={{
-                                        padding: "0.8rem",
-                                        width: "100%",
-                                        borderRadius: "5px",
-                                        border: "none",
-                                        backgroundColor: "#b8a4ff",
-                                        color: "#000",
-                                        cursor: "pointer",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    Send Message
-                                </button>
-                            </div>
+                            <button
+                                type="submit"
+                                style={{
+                                    padding: "0.8rem",
+                                    width: "100%",
+                                    borderRadius: "5px",
+                                    border: "none",
+                                    backgroundColor: "#b8a4ff",
+                                    color: "#000",
+                                    cursor: "pointer",
+                                    fontWeight: "bold",
+                                }}
+                            >
+                                Send Message
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -510,12 +550,11 @@ function App() {
             <footer
                 style={{
                     backgroundColor: "#b8a4ff",
-                    padding: "3rem", // bigger
+                    padding: "3rem",
                     marginTop: "2rem",
                     textAlign: "center",
                 }}
             >
-                {/* Nav links in the footer */}
                 <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "1.5rem" }}>
                     <a href="/" style={{ color: "#000", textDecoration: "none" }}>
                         Home
@@ -534,36 +573,35 @@ function App() {
                     </a>
                 </div>
 
-                {/* Social Icons, bigger size */}
                 <div style={{ display: "flex", justifyContent: "center", gap: "2rem", marginBottom: "1.5rem" }}>
                     <a
                         href="https://www.linkedin.com/in/ayesha-irum-a817471b2/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: "#000", fontSize: "2rem" }} // bigger icon
+                        style={{ color: "#000", fontSize: "2rem" }}
                     >
                         <i className="fab fa-linkedin"></i>
                     </a>
+
                     <a
-                        href="https://www.instagram.com/iayeshairum/"
+                        href="https://github.com/AyeshaIrum"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#000", fontSize: "2rem" }}
                     >
-                        <i className="fab fa-instagram"></i>
+                        <i className="fab fa-github"></i>
                     </a>
+
                     <a
-                        href="https://www.facebook.com/ayesha.irum.16"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="mailto:ayeshairum18@gmail.com"
                         style={{ color: "#000", fontSize: "2rem" }}
                     >
-                        <i className="fab fa-facebook"></i>
+                        <i className="fas fa-envelope"></i>
                     </a>
                 </div>
 
                 <p style={{ color: "#000", marginTop: "1rem", fontSize: "0.9rem" }}>
-                    © 2024. All rights reserved.
+                    © 2025 Ayesha Irum. All rights reserved.
                 </p>
             </footer>
         </div>
