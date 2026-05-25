@@ -37,7 +37,7 @@ function App() {
                     zIndex: -1,
                 }}
             >
-                <source src="/star.mov" type="video/mp4" />
+                <source src={process.env.PUBLIC_URL + "/star.mov"} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 
@@ -97,7 +97,7 @@ function App() {
 
                 <div style={{ display: "flex", gap: "1rem", marginBottom: "2rem" }}>
                     <a
-                        href="/ayesha_resume.pdf"
+                        href={process.env.PUBLIC_URL + "/ayesha_resume.pdf"}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
@@ -139,7 +139,7 @@ function App() {
                     }}
                 >
                     <img
-                        src="/ayesha.PNG"
+                        src={process.env.PUBLIC_URL + "/ayesha.PNG"}
                         alt="Ayesha"
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
